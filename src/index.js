@@ -1,16 +1,14 @@
 
 /* eslint-disable import/no-commonjs */
 
-const {
-	SansSerif,
-	Serif,
-	Handwriting,
-	Marker,
-	Curly,
-	Pixel,
-	Scratch,
-	PixelAlt,
-} = require('./datauri.js');
+const SansSerif = require('./NotoSans-Medium.woff2');
+const Serif = require('./SourceSerifPro-Regular.woff2');
+const Handwriting = require('./handlee-regular.woff2');
+const Marker = require('./Knewave.woff2');
+const Curly = require('./Griffy-Regular.woff2');
+const Pixel = require('./Grand9K-Pixel.woff2');
+const Scratch = require('./ScratchSavers_b2.woff2');
+const PixelAlt = require('./PixelAlt.woff2');
 
 var log = console;
 
