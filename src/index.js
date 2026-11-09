@@ -12,6 +12,8 @@ const {
 	PixelAlt,
 } = require('./datauri.js');
 
+var log = console;
+
 const fontSource = {
     'Sans Serif': SansSerif,
     'Serif': Serif,
@@ -20,7 +22,7 @@ const fontSource = {
     'Curly': Curly,
     'Pixel': Pixel,
     'Scratch': Scratch,
-	'PixelAlt': PixelAlt
+    'PixelAlt': PixelAlt
 };
 
 const fontData = {};
@@ -45,7 +47,7 @@ const fetchFonts = () => {
                 fontData[fontName] = `@font-face{font-family:"${fontName}";src:url("${url}");}`;
             })
             .catch(err => {
-                console.error(err);
+                log.error(err);
             })
         );
     }
@@ -85,7 +87,7 @@ const loadFonts = () => fetchFonts()
         return waitForFontsToLoad();
     })
     .catch(err => {
-        console.error(err);
+        log.error(err);
     });
 
 const getFonts = () => fontData;
